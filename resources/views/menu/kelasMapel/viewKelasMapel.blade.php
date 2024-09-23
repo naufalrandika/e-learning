@@ -67,7 +67,7 @@
         </div>
     </div>
 
-    {{-- Section Tugas, Materi --}}
+    <!-- {{-- Section Tugas, Materi --}}
     <div class="row ps-4 pe-4 mb-4" id="materi">
         <div class=" col-lg-12 col-md-12">
             <h3 class=" fw-bold text-primary"><i class="fa-solid fa-book"></i> Materi
@@ -287,7 +287,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     {{-- Section Ujian --}}
     <div class="mb-4 ps-4 pe-4">

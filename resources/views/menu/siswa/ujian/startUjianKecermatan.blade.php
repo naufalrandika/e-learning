@@ -56,14 +56,14 @@
 
 
 
-                {{-- Jawaban --}}
+                <!-- {{-- Jawaban --}}
                 <form id="ujianForm">
                     <div class="rounded-2 mb-4 col-12">
                         <div class="rounded-2 mb-4 col-12">
                             <h6 class="text-primary fw-bold">Pilihan Jawaban</h6>
-                            <div class="row" id="jawaban-container">
+                            <div class="row" id="jawaban-container" style="display: flex; justify-content: space-between;">
                                 @foreach (['a', 'b', 'c', 'd', 'e'] as $letter)
-                                    <div class="col-12 col-lg-5 form-check mb-2 d-none" id="soal-{{ $letter }}">
+                                    <div class="col-lg-2 col-md-2 col-sm-12 form-check mb-2" id="soal-{{ $letter }}" style="text-align: center;">
                                         <input class="form-check-input" type="radio" name="jawaban"
                                             id="pilihan-{{ $letter }}" value="{{ strtoupper($letter) }}">
                                         <label class="form-check-label w-100 btn btn-outline-dark"
@@ -77,7 +77,29 @@
                     </div>
                 </form>
             </div>
+        </div>  -->
+                    {{-- Jawaban --}}
+            <form id="ujianForm">
+                <div class="rounded-2 mb-4 col-12">
+                    <div class="rounded-2 mb-4 col-12">
+                        <h2 class="text-primary fw-bold">Pilihan Jawaban</h2>
+                        <hr>
+                        <div class="row justify-content-center" id="jawaban-container" style="display: flex; justify-content: space-between;">
+                            @foreach (['a', 'b', 'c', 'd', 'e'] as $letter)
+                                <div class="col-lg-2 col-md-2 col-sm-12 form-check mb-2" id="soal-{{ $letter }}" style="text-align: center;">
+                                    <input class="form-check-input" type="radio" name="jawaban" id="pilihan-{{ $letter }}" value="{{ strtoupper($letter) }}" style="display: none;">
+                                    <label class="form-check-label w-100 btn" for="pilihan-{{ $letter }}" style="display: block; background-color: white; color: black; border: 1px solid #ced4da; padding: 15px; border-radius: 8px;">
+                                        {{ strtoupper($letter) }}. <span id="label-pilihan-{{ $letter }}"></span>
+                                    </label>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
+    </div>
+
 
         {{-- Navigation --}}
         <div class="col-lg-4 col-12">

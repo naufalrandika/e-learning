@@ -33,7 +33,7 @@
                     </div>
                     <div class="col-lg-6">
                         <h1 class=" fw-bold text-body-emphasis lh-1 mb-3">{{ $kelas['name'] }}</h1>
-                        <p class="lead">Selamat datang!, Selamat belajar!</p>
+                        <p class="lead">Selamat datang {{ Auth()->User()->name }}!, Selamat belajar!</p>
                         <button class="btn btn-outline-primary" onclick="getData('{{ $kelas['name'] }}')"
                             data-bs-toggle="modal" data-bs-target="#modal-view"><i class="fa-solid fa-users"></i> View
                             Siswa</button>
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        {{-- Gambar profil --}}
+        <!-- {{-- Gambar profil --}}
         <div class="col-12 col-sm-5 col-md-5 col-lg-3 p-4">
             <div class="bg-white rounded-2 p-4">
                 <div id="profile">
@@ -206,7 +206,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     {{-- Script JavaScript --}}
     <script>

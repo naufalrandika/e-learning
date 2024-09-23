@@ -68,7 +68,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
+            <footer class="sticky-footer bg-white" style="position: fixed; bottom: 0; width: 100%; background-color: white; padding: 25px 0; box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <strong>Academify-CBT</strong> made by Oktaven Software 2023 discover more
